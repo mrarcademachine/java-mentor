@@ -1,4 +1,4 @@
-package practice1;
+package com.erofeev.practice1;
 
 import java.util.Scanner;
 
