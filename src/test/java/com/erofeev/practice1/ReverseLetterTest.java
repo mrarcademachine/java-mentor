@@ -1,9 +1,8 @@
 package com.erofeev.practice1;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
-
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ReverseLetterTest {
 
@@ -64,10 +63,9 @@ public class ReverseLetterTest {
     }
 
     @Test
-    void throwsException_ifInputIsNull() {
+    void returnsEmptyString_ifInputIsNull() {
         String string = null;
-        assertThrows(NullPointerException.class, () ->
-                ReverseLetter.reverseLetters(string)
-        );
+        String result = "";
+        assertEquals(result, ReverseLetter.reverseLetters(string));
     }
 }

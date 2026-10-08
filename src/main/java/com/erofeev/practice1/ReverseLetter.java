@@ -2,9 +2,12 @@ package com.erofeev.practice1;
 
 public class ReverseLetter {
     public static String reverseLetters(String s) {
+        if (s == null) return "";
+
         char[] chars = s.toCharArray();
         int left = 0;
         int right = chars.length - 1;
+
         while (left < right) {
             if (!Character.isLetter(chars[left])) {
                 left++;
